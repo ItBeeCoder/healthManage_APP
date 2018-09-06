@@ -1,0 +1,283 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pillow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+     
+    
+    <application
+        android:name=".notification.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+         <activity
+            android:name=".ui.login"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+         <activity
+            android:name=".ui.register"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.breath"
+            android:label="@string/app_name" >
+        </activity>
+       <activity
+            android:name="com.pillow.ui.heart"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.Bodymove"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.UserInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.ChildPersonalInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.ChildPersonalInfoEdit"
+            android:label="@string/app_name" >
+        </activity>
+       
+       <activity
+            android:name="com.pillow.ui.ChildrenRelateOldman"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.OldmanConfirmRelate"
+            android:label="@string/app_name" >
+        </activity>
+       <activity
+            android:name="com.pillow.ui.AddDevice"
+            android:label="@string/app_name" >
+        </activity>
+      <activity
+            android:name="com.pillow.ui.UserPersonalInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.UserPersonalInfoEdit"
+            android:label="@string/app_name" >
+        </activity>
+      <activity
+            android:name="com.pillow.ui.LookRelateObject"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.pillow.ui.BreathRealtimeWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="com.pillow.ui.BreathnearweekWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.pillow.ui.BreathnearmonthWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.pillow.ui.BreathYesterdayChoice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.BreathNearweekChoice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.BreathNearmonthChoice"
+            android:label="@string/app_name" >
+        </activity>
+          
+        
+         <activity
+            android:name="com.pillow.ui.BreathNightMaxWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.BreathNightMinWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.BreathNightAvgWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+        
+        
+        <activity
+            android:name="com.pillow.ui.HeartRealtimeWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.pillow.ui.HeartTotalNightWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+          <activity
+            android:name="com.pillow.ui.HeartnearweekWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartnearmonthWave"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.pillow.ui.HeartYesterdayChoice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearweekChoice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearmonthChoice"
+            android:label="@string/app_name" >
+        </activity>
+        
+        
+         <activity
+            android:name="com.pillow.ui.HeartNightMaxWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNightMinWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNightAvgWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.pillow.ui.HeartNearweekMaxWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearweekMinWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearweekAvgWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="com.pillow.ui.HeartNearmonthMaxWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearmonthMinWave"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.pillow.ui.HeartNearmonthAvgWave"
+            android:label="@string/app_name" >
+        </activity>
+        
+       
+    <activity
+            android:name=".ui.LaunchActivity"
+            android:label="@string/app_name" >
+        </activity>
+     
+     <activity
+            android:name="com.pillow.notification.NotificationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity android:name="com.pillow.notification.ContentActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+         <activity android:name="com.pillow.ui.FindBackPassword1"
+            android:label="@string/app_name">
+        </activity>
+        
+          <activity android:name="com.pillow.ui.FindBackPassword2"
+            android:label="@string/app_name">
+        </activity>
+        
+           <activity android:name="com.pillow.ui.FindBackPassword3"
+            android:label="@string/app_name">
+        </activity>
+        
+           <activity android:name="com.pillow.ui.SettingPageActivity"
+            android:label="@string/app_name">
+        </activity>
+        
+            <activity android:name="com.pillow.ui.BluetoothSetActivity"
+            	android:label="@string/app_name">
+        </activity>
+           
+            <activity android:name="com.pillow.ui.RTMonitorActivity"
+            	android:label="@string/app_name">
+        </activity>
+           
+        <activity android:name="com.pillow.ui.TestSendData"
+            	android:label="@string/app_name">
+        </activity>
+        
+          <activity android:name="com.pillow.notification.FirstNotificationActivity"
+            	android:label="@string/app_name">
+        </activity>
+        
+            <activity android:name="com.pillow.ui.SecondNotificationActivity"
+            	android:label="@string/app_name">
+        </activity>
+        
+        <activity android:name="com.pillow.notification.FirstSuccessNotifiActivity"
+            	android:label="@string/app_name">
+        </activity>
+            
+        <service android:name="com.pillow.notification.FirstSuccessNotifiService"></service>
+        <service android:name="com.pillow.notification.PushSmsService"></service>
+    
+         <activity
+            android:name="cn.smssdk.SMSSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+    </application>
+
+</manifest>

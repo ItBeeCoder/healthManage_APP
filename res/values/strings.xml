@@ -1,0 +1,143 @@
+<resources>
+
+    <string name="app_name">pillow</string>
+	<string name="register">注册</string>
+	<!-- 注册 -->
+    <string name="registerinfo">输入手机号后，点击"获取密码"，系统会自动向你的手机发送一条短信</string>
+    <string name="register_tip">【提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录生鲜\n 3.你还可以选择其他注册方式</string>
+    <string name="register_in_normal">用户注册</string>
+    <string name="register_normal_useraccount">帐号：</string>
+    <string name="register_normal_useraccount_hint">请注册账号</string>
+    <string name="register_normal_email">邮箱：</string>
+    <string name="register_normal_email_hint">请输入邮箱帐号</string>
+    <string name="register_normal_password">密码：</string>
+    <string name="register_normal_password_hint">请输入密码</string>
+    <string name="register_normal_repassword">确认密码：</string>
+    <string name="register_normal_repassword_hint">请输入确认密码</string>
+    <string name="register_return_result">注册返回结果：</string>
+	<!-- 登陆界面 -->
+    <string name="login">登录</string>
+    <string name="loginacount">账号：</string>
+    <string name="loginpassword">密   码：</string>
+    <string name="login_user_type">用户类型：</string>
+    <string name="user_type_Oldman">老人</string>
+    <string name="user_type_child">子女</string>
+    <string name="code">验证码：</string>
+    <string name="inputpassword">请输入密码</string>
+    <string name="inputaccount">请输入账号</string>
+    <string name="search_info">暂无</string>
+    <string name="login_btn">登   录</string>
+    <string name="find_password">忘记密码</string>
+    <string name="user_register">用户注册</string>
+    <string name="usecooperationaccount">用合作网站帐户登录</string>
+    <string name="registerfree">免费注册</string>
+    <string name="login_loading">正在登錄，請稍候。。</string>
+    <string name="add2card">加入购物车</string>
+    <string name="addorder">下单</string>
+    
+      <!-- 找回密码 -->
+     <string name="find_back_password">找回密码</string>
+   	 <string name="telephone_num">手机号码</string>
+   	 <string name="next_step">下一步</string>
+    <string name="verify_code">验证码</string>
+    <string name="set_new_password">设置新密码</string>
+    <string name="user_account">账号</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_new_password">确认密码</string>
+    <string name="next_step_success">确定</string>
+    <string name="new_password_prompt">密码修改成功，点击确定返回登陆界面</string>
+    
+    
+    <!-- 启动界面 -->
+     <string name="empty">欢迎界面</string>
+    
+    <!-- 系统首页 -->
+     <string name="oldmantype">选择老人</string>
+     <string name="confirm_prompt">关联提示</string>
+     
+      <!-- 呼吸界面 -->
+     <string name="breath_page_back">返回</string>
+     <string name="breath_data">呼吸信息</string>
+     <string name="breath_realtime_wave">昨晚呼吸结果</string>
+     <string name="breath_near_week_wave">近一周呼吸结果</string>
+     <string name="breath_near_month_wave">近一个月呼吸结果</string>
+     
+     <!-- 心率界面 -->
+     <string name="heart_page_back">返回</string>
+     <string name="heart_data">心率信息</string>
+     <string name="heart_realtime_wave">昨晚心率结果</string>
+     <string name="heart_near_week_wave">近一周心率结果</string>
+     <string name="heart_near_month_wave">近一个月心率结果</string>
+     
+     <!-- 体动界面 -->
+     <string name="body_move_back">返回</string>
+     <string name="body_move_data">体动信息</string>
+     
+     <!-- 添加设备 -->
+     <string name="add_device">添加设备</string>
+     <string name="device_id">设备编号</string>
+      <string name="cancale_oldman_relate_device">取消关联</string>
+      
+       <!-- 老人确认关联  -->
+     <string name="child_account">子女账号</string>
+     
+     
+     <!-- 短信推送服務 -->
+     <string name="push_msg_service">消息推送</string>
+     <string name="push_msg_content">异常报警消息</string>
+     
+    <!-- 子女关联老人 -->
+    <string name="children_relate_oldman">子女关联老人</string>
+    <string name="oldman_confirm_relate">老人确认关联</string>
+     <string name="look_relate_object">查看关联对象</string>
+    <string name="oldman_account">老人账号</string>
+    <string name="children_account">子女账号</string>
+    <string name="children_Oldman_relation">关   系</string>
+    <string name="input_tips">请选择与被关联者的关系</string>
+    
+    <string name="submit_children_relate_oldman">提交</string>
+    <string name="cancel_children_relate_oldman">取消关联</string>
+   
+    
+     <!-- 老人个人中心 -->
+      <string name="userPersonal_info_page_back">返回</string>
+      <string name="userPersonal_info_page_edit">编辑</string>
+      <string name="personal_useraccount">账号</string>
+      <string name="personal_username">姓名</string>
+     <string name="personal_gender">性别</string>
+     <string name="male_gender">男</string>
+     <string name="female_gender">女</string>
+     <string name="personal_age">年龄</string>
+     <string name="personal_home_address">家庭住址</string>
+     <string name="personal_telephone">联系方式</string>
+     <string name="personal_height">身高</string>
+      <string name="personal_weight">体重</string>
+      
+    <!-- 蓝牙操作 -->
+    <string name="devicename">设备名称</string>
+    <string name="devicestatus">设备状态</string>
+      
+      <!-- 个人中心 -->
+    <string name="personal_info_title">信息管理</string>
+     <string name="user_personal_info_title">老人基本信息</string>
+    <string name="user_personal_info_edit">编辑老人基本信息</string>
+     
+    <string name="personal_more">更多</string>
+    <string name="personal_welcome">欢迎</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_register">注册</string>
+    <string name="personal_account">账户安全</string>
+    <string name="personal_return_back">地址管理</string>
+    <string name="personal_account_center">积分</string>
+    <string name="personal_customer_service">地址</string>
+    <string name="personal_infomation_service">预约电话服务</string>
+    <string name="more_advice">请提出您对客户端的宝贵意见</string>
+    
+    <string name="personal_quit">退出登录</string>
+    <string name="more_sure">确定</string>
+    
+    <string name="action_settings">Settings</string>
+    <string name="action_start">开始</string>
+    <string name="action_stop">停止</string>
+    
+</resources>

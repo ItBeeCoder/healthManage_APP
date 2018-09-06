@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/confirmrelate_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/breath_page_back"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/look_relate_object"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/second_linear_layout"
+       >
+        
+          <TextView
+            android:id="@+id/already_relate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"     
+            android:gravity="center_vertical"
+            android:text="已关联的用户:"
+            android:padding="5dp" 
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size"
+            />
+     </LinearLayout>
+     
+  
+</LinearLayout>
+

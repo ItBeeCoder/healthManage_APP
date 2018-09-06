@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/top_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/heart_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/heart_page_back"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/heart_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="时间段内最高心率"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+         <TextView
+             android:id="@+id/maxheartvalue"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="时间段内最低心率"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+         <TextView
+             android:id="@+id/minheartvalue"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="时间段内平均心率"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+
+         <TextView
+             android:id="@+id/avgheartvalue"
+            android:layout_width="120.0dip"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+    
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+     android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+    >
+   <TextView 
+       android:id="@+id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="开始时间"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" 
+       />
+   
+  <EditText
+        android:id="@+id/editText1"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="选择日期"
+         >
+         </EditText>
+       <EditText
+        android:id="@+id/editText2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="选择时间"
+         >
+         </EditText>
+	</LinearLayout>
+
+
+    
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginRight="5dp"
+    >
+  	 <TextView 
+       android:id="@+id/enddate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="結束时间"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" 
+       />
+ 	  <EditText
+        android:id="@+id/editText3"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="选择日期"
+         >
+       </EditText>
+       <EditText
+        android:id="@+id/editText4"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="选择时间"
+         >
+	</EditText>
+	</LinearLayout>
+
+    
+     <Button
+         android:id="@+id/get_heart_data"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="获取心率数据"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+    
+      <Button
+         android:id="@+id/look_heart_yesterdaychart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看昨天心率"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+       <Button
+         android:id="@+id/look_heart_nearweekchart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看近一周心率结果"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+        <Button
+         android:id="@+id/look_heart_nearmonthchart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看近一月心率结果"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/confirmrelate_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/breath_page_back"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/oldman_confirm_relate"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/first_linear_layout"
+       >
+        
+          <TextView
+            android:id="@+id/confirm_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"     
+            android:gravity="center_vertical"
+            android:text="@string/confirm_prompt"
+            android:padding="5dp" 
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" 
+         
+            />
+     </LinearLayout>
+    
+     
+     
+    <LinearLayout 
+    android:id="@+id/total_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/personal_top_layout"
+    android:orientation="vertical" >
+    
+      <LinearLayout
+         android:id="@+id/second_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="@string/child_account"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+          <EditText
+                        android:id="@+id/child_account"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="40"
+                        android:focusableInTouchMode="true"
+                        android:padding="5.0dip"
+                        android:paddingRight="30dp"
+                        android:textColor="#ff3b3b3b"
+                        android:textSize="16.0sp" />
+    </LinearLayout>
+    
+    
+     <Button
+         android:id="@+id/submit_relation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="@string/submit_children_relate_oldman"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+     
+     <Button
+         android:id="@+id/cancel_relation"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="@string/cancel_children_relate_oldman"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

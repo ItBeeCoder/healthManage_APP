@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:id="@+id/confirm_prompt_ll"
+        android:visibility="gone"
+       >
+        
+          <TextView
+            android:id="@+id/confirm_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"     
+            android:gravity="center_vertical"
+            android:text="此页面用来测试向服务器以无线形式发送数据"
+            android:padding="5dp" 
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" 
+            />
+         
+     </LinearLayout>
+    
+</LinearLayout>

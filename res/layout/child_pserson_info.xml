@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/userPersonal_info_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/userPersonal_info_page_back"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="子女个人信息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+        
+         <TextView
+            android:id="@+id/userPersonal_info_page_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/userPersonal_info_page_edit"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+    </RelativeLayout>
+
+      <ScrollView 
+        android:id="@+id/personal_scrollView"
+        android:layout_below="@id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+   <LinearLayout
+         android:id="@+id/zero_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="@string/personal_useraccount"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+          <EditText
+                        android:id="@+id/oldman_useraccount"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="20"
+                        android:focusableInTouchMode="true"
+                        android:padding="5.0dip"
+                        android:paddingRight="30dp"
+                        android:textColor="#ff3b3b3b"
+                        android:textSize="16.0sp" />
+    </LinearLayout>
+        
+      <LinearLayout
+         android:id="@+id/first_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="@string/personal_username"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+          <EditText
+                        android:id="@+id/oldman_username"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:padding="5.0dip"
+                        android:paddingRight="30dp"
+                        android:textColor="#ff3b3b3b"
+                        android:textSize="16.0sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/fourth_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="@string/personal_home_address"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+      
+        <EditText
+                        android:id="@+id/oldman_home_address"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:padding="5.0dip"
+                        android:paddingRight="30dp"
+                        android:textColor="#ff3b3b3b"
+                        android:textSize="16.0sp" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/fifth_linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearlayout"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:padding="10sp" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:text="@string/personal_telephone"
+            android:textColor="@color/black"
+            android:textSize="15.0sp" />
+        <EditText
+                        android:id="@+id/oldman_telephone"
+                        android:layout_width="163dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:focusableInTouchMode="true"
+                        android:padding="5.0dip"
+                        android:paddingRight="30dp"
+                        android:textColor="#ff3b3b3b"
+                        android:textSize="16.0sp" />
+    </LinearLayout>
+    
+    </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     android:background="#f0f0f0"
+     >
+
+     <RelativeLayout
+        android:id="@+id/top_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/breath_realtime_wave"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#f0f0f0"
+         />
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+         android:visibility="gone"
+        android:layout_gravity="center" 
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/startBtn"
+            android:layout_width="100dip"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="开始" >
+        </Button>
+
+        <Button
+            android:id="@+id/stopBtn"
+            android:layout_width="100dip"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="结束" >
+        </Button>
+    </LinearLayout>
+    
+</LinearLayout>

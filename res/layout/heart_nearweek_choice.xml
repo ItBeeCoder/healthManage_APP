@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/top_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/heart_page_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+             android:text="@string/heart_page_back"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size"  />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:text="@string/heart_data"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+
+    
+     <Button
+         android:id="@+id/look_max_heart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看最高心率结果"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+    
+    <Button
+         android:id="@+id/look_min_heart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看最低心率结果"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+    
+      <Button
+         android:id="@+id/look_avg_heart"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginBottom="14dp"
+         android:layout_marginLeft="15dp"
+         android:layout_marginRight="15dp"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/android_title_bg"
+         android:gravity="center"
+         android:text="查看平均心率结果"
+         android:textColor="#fff"
+         android:textSize="18sp" />
+       
+</LinearLayout>
